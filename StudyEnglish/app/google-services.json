@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "221336145565",
+    "firebase_url": "https://studyenglish-1589260058766.firebaseio.com",
+    "project_id": "studyenglish-1589260058766",
+    "storage_bucket": "studyenglish-1589260058766.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221336145565:android:980d56467b0596c579ce74",
+        "android_client_info": {
+          "package_name": "org.jby.studyenglish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221336145565-nsad7fooogelta663jojcd17fa3ustdj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.jby.studyenglish",
+            "certificate_hash": "ca60ce9eb876bbe56e3013389af2f6d51e5c1f3d"
+          }
+        },
+        {
+          "client_id": "221336145565-0ckh8deahnu7e75pr5in51t4f1ds9tr3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3_3WXlEevX-yr8DI7fnGl5feZhdlAeqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221336145565-0ckh8deahnu7e75pr5in51t4f1ds9tr3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
