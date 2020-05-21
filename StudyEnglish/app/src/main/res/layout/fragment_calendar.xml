@@ -12,7 +12,6 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:theme="@style/AppTheme"
             app:elevation="0dp">
 
@@ -20,6 +19,7 @@
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:background="#ffffff"
                 app:tabMode="scrollable"
                 app:tabSelectedTextColor="#000000"
