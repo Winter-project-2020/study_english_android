@@ -12,7 +12,6 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:elevation="0dp">
             <androidx.appcompat.widget.Toolbar
@@ -24,6 +23,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:text="내정보"
                     android:textColor="#000000"
                     android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title" />
