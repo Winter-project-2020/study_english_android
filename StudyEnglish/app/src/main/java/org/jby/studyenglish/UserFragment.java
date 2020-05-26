@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.google.android.material.tabs.TabLayout;
 
 public class UserFragment extends Fragment {
-    TextView login_logout;
+    TextView login_logout, QandA;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -25,6 +25,15 @@ public class UserFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        QandA = rootView.findViewById(R.id.utextView9);
+        QandA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ChatbotActivity.class);
                 startActivity(intent);
             }
         });
