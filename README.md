@@ -18,4 +18,6 @@ implementation 'io.grpc:grpc-okhttp:1.15.1'
 ```
 - Manifest
 ```
+//챗봇, 웹뷰
+<uses-permission android:name="android.permission.INTERNET"/> 
 ```
