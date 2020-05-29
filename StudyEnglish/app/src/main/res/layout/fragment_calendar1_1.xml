@@ -15,7 +15,9 @@
             android:text="시험 종류:"
             android:textSize="20sp"
             android:textStyle="bold" />
+
         <EditText
+            android:id="@+id/kindoftest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -72,6 +74,7 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/supplies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -90,10 +93,21 @@
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/place"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:ems="10"
             android:textSize="17sp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="#FF8383"
+        android:text="저장"
+        android:textColor="#ffffff" />
 </LinearLayout>
