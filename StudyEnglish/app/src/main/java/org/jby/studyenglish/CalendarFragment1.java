@@ -1,5 +1,6 @@
 package org.jby.studyenglish;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import java.util.List;
 
 public class CalendarFragment1 extends Fragment {
-    Fragment fragment1, fragment2;
+    Fragment fragment1; CalendarFragment1_2 fragment2;
     Spinner spinner;
 
     @Override
@@ -36,6 +37,7 @@ public class CalendarFragment1 extends Fragment {
                     loadSpinnerData();
                     getFragmentManager().beginTransaction().replace(R.id.eventContainer, fragment1).commit();
                 }else {
+                    inquery(position-1);
                     getFragmentManager().beginTransaction().replace(R.id.eventContainer, fragment2).commit();
                 }
             }
@@ -68,5 +70,20 @@ public class CalendarFragment1 extends Fragment {
 
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
+    }
+
+    public void inquery(int position){
+        CalendarDatabaseHandler db = new CalendarDatabaseHandler(getContext());
+        Cursor cursor = db.executeQuery(position);
+
+        String schedule = cursor.getString(1) + '\n'
+                + cursor.getString(2) + '\n' + cursor.getString(3) + '\n'
+                + cursor.getString(4) + '\n' + cursor.getString(5);
+
+        Bundle bundle = new Bundle();
+        bundle.putString("schedule", schedule); // Key, Value
+        fragment2.setArguments(bundle);
+
+        cursor.close();
     }
 }

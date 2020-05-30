@@ -65,6 +65,18 @@ public class CalendarDatabaseHandler extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 
+    /*
+    데이터 조회
+     */
+    public Cursor executeQuery(int position){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+
+        cursor.moveToPosition(position);
+
+        return cursor;
+    }
+
     /**
      * Getting all datas
      * returns list of items
@@ -73,7 +85,7 @@ public class CalendarDatabaseHandler extends SQLiteOpenHelper {
         List<String> items = new ArrayList<String>();
 
         // Select All Query
-        String selectQuery = "SELECT  * FROM " + TABLE_NAME;
+        String selectQuery = "SELECT * FROM " + TABLE_NAME;
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);

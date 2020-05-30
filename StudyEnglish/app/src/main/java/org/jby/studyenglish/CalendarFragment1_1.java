@@ -11,6 +11,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
@@ -78,6 +79,12 @@ public class CalendarFragment1_1 extends Fragment {
 
                 // inserting new data into database
                 db.insertData(a, b, c, d, e);
+
+                kindoftest.setText("");
+                supplies.setText("");
+                place.setText("");
+
+                Toast.makeText(getContext(), "저장되었습니다", Toast.LENGTH_LONG).show();
             }
         });
 
