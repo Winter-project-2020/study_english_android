@@ -19,8 +19,8 @@
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614286-f373a380-a5bf-11ea-9338-8acf5b34fe4a.jpg">
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614416-21f17e80-a5c0-11ea-9077-c96a4d136f55.jpg">
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614338-071f0a00-a5c0-11ea-9f99-cd437115120f.jpg"> 
-  <img width="200" src=""> 
-  <img width="200" src="">
+  <img width="200" src="https://user-images.githubusercontent.com/43267195/83614590-60873900-a5c0-11ea-9b0a-14ff1856ebae.jpg"> 
+  <img width="200" src="https://user-images.githubusercontent.com/43267195/83614629-6ed55500-a5c0-11ea-803d-7c5fced91098.jpg">
 </div>
 
 - 내정보 화면
