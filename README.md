@@ -41,6 +41,9 @@ implementation 'ai.api:libai:1.6.12'
 // Java V2
 implementation 'com.google.cloud:google-cloud-dialogflow:0.67.0-alpha'
 implementation 'io.grpc:grpc-okhttp:1.15.1'
+//animated chart
+implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
+
 ```
 - Manifest
 ```
