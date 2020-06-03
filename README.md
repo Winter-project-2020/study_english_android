@@ -7,7 +7,7 @@
 </div>
 
 - 레벨 화면
-![](name-of-level.gif)
+![](name-of-giphy.gif)
 
 - 일정 화면
 <div>
