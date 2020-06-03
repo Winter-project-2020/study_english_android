@@ -1,6 +1,22 @@
 # 프로젝트 제목 : study english
 >번역기를 사용해 영어공부를 좀 더 쉽게 도와주는 앱
 ## 1.결과물
+- 홈 화면
+<div>
+  
+</div>
+- 레벨 화면
+<div>
+  
+</div>
+- 일정 화면
+<div>
+  
+</div>
+- 내정보 화면
+<div>
+  
+</div>
 ## 2. 환경설정
 - Build.gradle(Module)
 ```
