@@ -7,7 +7,7 @@
 </div>
 
 - 레벨 화면
-![](name-of-giphy.gif)
+<img width="200" src="https://user-images.githubusercontent.com/43267195/83660141-6e0fe380-a5ff-11ea-82b0-d7439ee6ca9e.gif">
 
 - 일정 화면
 <div>
