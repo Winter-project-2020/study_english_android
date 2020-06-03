@@ -47,6 +47,7 @@ allprojects {
         // maven {
         //     url 'https://maven.google.com'
         // }
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -70,4 +71,7 @@ dependencies {
     // Java V2
     implementation 'com.google.cloud:google-cloud-dialogflow:0.67.0-alpha'
     implementation 'io.grpc:grpc-okhttp:1.15.1'
+
+    //animated chart
+    implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
 }
