@@ -3,7 +3,8 @@
 ## 1.결과물
 - 홈 화면
 <div>
-  
+  <img width="200" src="https://user-images.githubusercontent.com/43267195/83612921-06857400-a5be-11ea-84ea-e0b12f98cbb6.jpg"> 
+  <img width="200" src="https://user-images.githubusercontent.com/43267195/83613333-94f9f580-a5be-11ea-99ca-bc86c8c158b6.jpg"> 
 </div>
 
 - 레벨 화면
