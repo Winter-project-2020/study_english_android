@@ -60,29 +60,38 @@ public class HomeFragment1 extends Fragment {
         AnimThread thread = new AnimThread();
         thread.start();
 
-        Button.OnClickListener onClickListener = new Button.OnClickListener(){
+        Button helloBtn = rootView.findViewById(R.id.helloBtn);
+        helloBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (v.getId()){
-                    case R.id.helloBtn:
-                        Intent intent = new Intent(getContext(), Hello.class);
-                        startActivity(intent);
-                        break;
-                    case R.id.travelBtn:
-                        Intent intent1 = new Intent(getContext(), Travel.class);
-                        startActivity(intent1);
-                        break;
-                    case R.id.questionBtn:
-                        Intent intent2 = new Intent(getContext(), Question.class);
-                        startActivity(intent2);
-                        break;
-                    case R.id.emergencyBtn:
-                        Intent intent3 = new Intent(getContext(), Emergency.class);
-                        startActivity(intent3);
-                        break;
-                }
+                Intent intent = new Intent(getContext(), Hello.class);
+                startActivity(intent);
             }
-        };
+        });
+        Button travelBtn = rootView.findViewById(R.id.travelBtn);
+        travelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Travel.class);
+                startActivity(intent);
+            }
+        });
+        Button questionBtn = rootView.findViewById(R.id.questionBtn);
+        questionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Question.class);
+                startActivity(intent);
+            }
+        });
+        Button emergencyBtn = rootView.findViewById(R.id.emergencyBtn);
+        emergencyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), Emergency.class);
+                startActivity(intent);
+            }
+        });
 
         return rootView;
     }
