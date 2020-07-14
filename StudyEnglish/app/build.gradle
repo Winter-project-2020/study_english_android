@@ -74,4 +74,7 @@ dependencies {
 
     //animated chart
     implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
+
+    //OkHttp3 (Http기반의 request/response하는 라이브러리)
+    implementation "com.squareup.okhttp3:okhttp:4.8.0"
 }

@@ -2,16 +2,12 @@ package org.jby.studyenglish;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
 
 public class UserFragment extends Fragment {
     TextView login_logout, QandA;
@@ -39,5 +35,10 @@ public class UserFragment extends Fragment {
         });
 
         return rootView;
+    }
+
+    public void changeLoginStatus(String text)
+    {
+        login_logout.setText(text);
     }
 }

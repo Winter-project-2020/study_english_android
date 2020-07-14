@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme2"
         android:usesCleartextTraffic="true">
-        <activity android:name=".script.Emergency"></activity>
+        <activity android:name=".SignInActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:name=".script.Emergency" />
         <activity android:name=".script.Question" />
         <activity android:name=".script.Hello" />
         <activity android:name=".script.Travel" />

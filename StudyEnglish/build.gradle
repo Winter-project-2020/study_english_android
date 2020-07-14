@@ -14,6 +14,12 @@ buildscript {
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
+    // okhttp 오류 안나게 설정
+    configurations.all {
+        resolutionStrategy {
+            force("net.sf.proguard:proguard-base:6.2.0")
+        }
+    }
 }
 
 allprojects {
