@@ -7,7 +7,7 @@
 ### 홈 화면
 
 <div>
-  <img width="250" src="">
+  <img width="250" src="https://user-images.githubusercontent.com/43267195/87910748-7c2d9c80-caa5-11ea-91f0-4d8c3fad6d8d.gif">
 </div>
 
 ### 레벨 화면
@@ -37,7 +37,7 @@
 ### 로그인 화면
 
 <div>
-  <img width="250" src="">
+  <img width="250" src="https://user-images.githubusercontent.com/43267195/87910888-b72fd000-caa5-11ea-87f0-06c5957c541f.gif">
 </div>
 
 환경설정
