@@ -1,15 +1,18 @@
-# 프로젝트 제목 : study english
+프로젝트 제목 : study english
+=====================================
 >영어공부를 좀 더 쉽고 재미있게 할 수 있도록 도와주는 앱
-## 1.결과물
-- 홈 화면
-<div>
 
+결과물
+-----------------------
+### 홈 화면
+<div>
+  <img width="250" src="">
 </div>
 
-- 레벨 화면
+### 레벨 화면
 <img width="200" src="https://user-images.githubusercontent.com/43267195/83660141-6e0fe380-a5ff-11ea-82b0-d7439ee6ca9e.gif">
 
-- 일정 화면
+### 일정 화면
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614132-bc04f700-a5bf-11ea-8ebe-dda40a071a22.jpg"> 
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614176-d0e18a80-a5bf-11ea-8bb2-02794345ad40.jpg">
@@ -21,14 +24,20 @@
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614629-6ed55500-a5c0-11ea-803d-7c5fced91098.jpg">
 </div>
 
-- 내정보 화면
+### 내정보 화면
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83612921-06857400-a5be-11ea-84ea-e0b12f98cbb6.jpg"> 
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83613333-94f9f580-a5be-11ea-99ca-bc86c8c158b6.jpg"> 
 </div>
 
-## 2. 환경설정
-- Build.gradle(Module)
+### 로그인 화면
+<div>
+  <img width="250" src="">
+</div>
+
+환경설정
+--------------------------
+### Build.gradle(Module)
 ```
 //Google Firebase Authentication 
 implementation 'com.google.firebase:firebase-auth:19.1.0'
@@ -47,7 +56,7 @@ implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
 implementation "com.squareup.okhttp3:okhttp:4.8.0"
 
 ```
-- Manifest
+### Manifest
 ```
 //챗봇, 웹뷰, OkHttp3
 <uses-permission android:name="android.permission.INTERNET"/> 
