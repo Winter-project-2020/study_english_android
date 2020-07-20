@@ -5,14 +5,17 @@
 결과물
 -----------------------
 ### 홈 화면
+
 <div>
   <img width="250" src="">
 </div>
 
 ### 레벨 화면
+
 <img width="200" src="https://user-images.githubusercontent.com/43267195/83660141-6e0fe380-a5ff-11ea-82b0-d7439ee6ca9e.gif">
 
 ### 일정 화면
+
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614132-bc04f700-a5bf-11ea-8ebe-dda40a071a22.jpg"> 
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83614176-d0e18a80-a5bf-11ea-8bb2-02794345ad40.jpg">
@@ -25,12 +28,14 @@
 </div>
 
 ### 내정보 화면
+
 <div>
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83612921-06857400-a5be-11ea-84ea-e0b12f98cbb6.jpg"> 
   <img width="200" src="https://user-images.githubusercontent.com/43267195/83613333-94f9f580-a5be-11ea-99ca-bc86c8c158b6.jpg"> 
 </div>
 
 ### 로그인 화면
+
 <div>
   <img width="250" src="">
 </div>
