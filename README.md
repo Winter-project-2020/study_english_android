@@ -41,11 +41,74 @@
 </div>
 
 ```
-<div>
-  <img width="250" src="https://user-images.githubusercontent.com/43267195/87911293-5785f480-caa6-11ea-889c-e4a12fd32c7d.PNG">
-  <img width="250" src="https://user-images.githubusercontent.com/43267195/87911408-89975680-caa6-11ea-9dce-8d84ed898271.PNG">
-  <img width="250" src="https://user-images.githubusercontent.com/43267195/87911751-180bd800-caa7-11ea-92f8-55bfa02ea4df.PNG">
-</div>
+btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /* 백그라운드 스레드 실행 */
+                Thread th = new Thread(LoginActivity.this);
+                th.start();
+            }
+        });
+.
+.
+.
+/* 백그라운드 스레드가 사용하는 함수 */
+    @Override
+    public void run() {
+        /* 사용자의 입력값 */
+        String userID = et_id.getText().toString();
+        String userPASSWORD = et_password.getText().toString();
+        boolean success = false;
+        Activity activity = LoginActivity.this;
+        try {
+            OkHttpClient client = new OkHttpClient();
+
+            RequestBody formBody = new FormBody.Builder()
+                    .add("userID", userID)
+                    .add("userPASSWORD", userPASSWORD)
+                    .build();
+            Request request = new Request.Builder()
+                    .url(url_data)
+                    .post(formBody)
+                    .build();
+
+            Response response = client.newCall(request).execute();
+            String responseString = response.body().string();
+            response.body().close();
+
+            JSONObject jsonObject = new JSONObject(responseString);
+            final String message = jsonObject.getString("message");
+
+            if(message.contains("로그인 되었습니다.")){
+                success = true;
+                mUserDTO.setUSER_ID(jsonObject.getString("userID"));
+                mUserDTO.setUSER_PASSWORD(jsonObject.getString("userPASSWORD"));
+            }
+
+            /* 백그라운드 스레드에서 메인UI를 변경할 경우 사용 */
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    name = mUserDTO.getUSER_ID();
+                    userFragment.changeLoginStatus(name);
+                }
+            });
+
+            if(success){
+                activity.finish();
+            }
+        } catch (Exception e) {
+
+        }
+    }
+    Handler mHandler = new Handler(){
+        @Override
+        public void handleMessage(@NonNull Message msg) {
+            super.handleMessage(msg);
+
+            userFragment.changeLoginStatus(name);
+        }
+    };
 ```
 
 환경설정
