@@ -43,7 +43,7 @@
                                                   Source code
 
 <div>
-  <img width="250" src="https://user-images.githubusercontent.com/43267195/87911293-5785f480-caa6-11ea-889c-e4a12fd32c7d.PNG">
+  <img width="250" height="500" src="https://user-images.githubusercontent.com/43267195/87911293-5785f480-caa6-11ea-889c-e4a12fd32c7d.PNG">
 </div>
 
 환경설정
