@@ -130,6 +130,9 @@ implementation 'io.grpc:grpc-okhttp:1.15.1'
 implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
 //OkHttp3 (Http기반의 request/response하는 라이브러리)
 implementation "com.squareup.okhttp3:okhttp:4.8.0"
+//Retrofit2, gson (회원가입)
+implementation 'com.google.code.gson:gson:2.8.6'
+implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
 
 ```
 ### Manifest
