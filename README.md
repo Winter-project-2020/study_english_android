@@ -120,16 +120,21 @@ implementation 'com.google.firebase:firebase-auth:19.1.0'
 implementation 'com.google.android.gms:play-services-auth:18.0.0'
 implementation 'com.google.android.material:material:1.1.0'
 implementation 'com.shobhitpuri.custombuttons:google-signin:1.0.0'
+
 //Google Dialogflow(챗봇)
 implementation 'ai.api:sdk:2.0.7@aar'
 implementation 'ai.api:libai:1.6.12'
+
 // Java V2
 implementation 'com.google.cloud:google-cloud-dialogflow:0.67.0-alpha'
 implementation 'io.grpc:grpc-okhttp:1.15.1'
+
 //animated chart
 implementation 'com.github.bmarrdev:android-DecoView-charting:v1.2'
+
 //OkHttp3 (Http기반의 request/response하는 라이브러리)
 implementation "com.squareup.okhttp3:okhttp:4.8.0"
+
 //Retrofit2, gson (회원가입)
 implementation 'com.google.code.gson:gson:2.8.6'
 implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
