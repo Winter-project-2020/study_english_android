@@ -111,7 +111,7 @@ btn_login.setOnClickListener(new View.OnClickListener() {
     };
 ```
 
-### 로그인 화면
+### 회원가입 화면
 
 <div>
   <img width="250" src="https://user-images.githubusercontent.com/43267195/88673444-9578bd80-d123-11ea-9780-e3b2c5209efd.PNG">
