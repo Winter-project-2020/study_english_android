@@ -13,8 +13,7 @@
         android:theme="@style/AppTheme2"
         android:usesCleartextTraffic="true">
         <activity android:name=".SignInActivity"
-            android:label=""
-            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+            android:label=""/>
         <activity android:name=".script.Emergency" />
         <activity android:name=".script.Question" />
         <activity android:name=".script.Hello" />
